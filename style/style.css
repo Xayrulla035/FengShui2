@@ -1,0 +1,127 @@
+@import url('./font.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Share;
+}
+.container{
+    max-width: 1734px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav{
+    height: 75px;
+    background-color: #F9F8F4;
+    display: flex;
+    align-items: center;
+    border: #242424 solid 1px;
+}
+.nav_box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav_mobile{
+    display: none;
+}
+.nav_logo{
+    text-decoration: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #242424;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    list-style: none;
+}
+.nav_link{
+    text-decoration: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #242424;
+}
+.nav_right{
+    display: flex;
+    gap: 60px;
+}
+.intro{
+    background-image: url(../images/intro_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 925px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro_title{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 74px;
+    text-transform: uppercase;
+    color: #EEEEEE;
+}
+.intro_text{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #EEEEEE;
+    max-width: 984px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.intro_btn{
+    width: 264px;
+    height: 80px;
+    border: #EEEEEE solid 2px;
+    background-color: unset;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    color: #EEEEEE;
+
+}
+#burger-toggle{
+    display: none;
+}
+.burger{
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+.burger span{
+    display: block;
+    height: 3px;
+    background: #000;
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+#burger-toggle:checked + .burger span:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+#burger-toggle:checked + .burger span:nth-child(2){
+    opacity: 0;
+}
+#burger-toggle:checked + .burger span:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu_link{
+    text-decoration: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #242424;
+}

@@ -204,6 +204,13 @@
         height: 35px;
         font-size: 16px;
     }
+    .nav_logo{
+        font-size: 22px;
+    }
+    .burger{
+        width: 25px;
+        height: 25px;
+    }
 }
 @media(max-width:600px){
     .nav{
@@ -241,6 +248,9 @@
         padding-top: 5px;
         padding-bottom: 15px;
     }
+    .nav_logo{
+        font-size: 22px;
+    }
     .intro_btn{
         width: 104px;
         height: 25px;
@@ -259,6 +269,9 @@
 @media(max-width:400px){
     .intro_title{
         font-size: 22px;
+    }
+    .nav_logo{
+        font-size: 20px;
     }
     .intro_btn{
         width: 94px;
